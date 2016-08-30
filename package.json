@@ -9,6 +9,7 @@
     "url": ""
   },
   "scripts": {
+    "deploy": "rm -rf public; brunch build --production; surge public",
     "lint": "eslint --ext .js,.jsx --ignore-pattern public",
     "start": "brunch watch --server"
   },
@@ -29,6 +30,7 @@
     "eslint-config-ryansobol": "^9.1.1",
     "javascript-brunch": "^2.0.0",
     "postcss-brunch": "^2.0.1",
+    "surge": "^0.18.0",
     "uglify-js-brunch": "^2.0.1"
   }
 }
